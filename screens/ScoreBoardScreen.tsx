@@ -2,10 +2,13 @@ import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
 import { RootStackParamList } from '../App';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import { useState } from 'react';
+import { useKeepAwake } from 'expo-keep-awake';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'ScoreBoard'>;
 
 export default function DetailsScreen({navigation, route} : Props) {
+    useKeepAwake();
+
     const [firstCount, SetFirstCount] = useState(0);
     const [secondCount, SetSecondCount] = useState(0);
 
