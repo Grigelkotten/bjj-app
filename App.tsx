@@ -5,10 +5,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import HomeScreen from './screens/HomeScreen';
 import ScoreBoardScreen from './screens/ScoreBoardScreen';
+import RulesScreen from './screens/RulesScreen';
 
 export type RootStackParamList = {
   Home: undefined;
   ScoreBoard: undefined;
+  Rules: undefined;
 }
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -23,6 +25,8 @@ export default function App() {
         options={{ title: 'Borås Grappling Academy', headerTitleAlign: 'center'}}/>
         <Stack.Screen name="ScoreBoard" component={ScoreBoardScreen} 
         options={{ title: 'Score Board', headerTitleAlign: 'center'}}/>
+        <Stack.Screen name="Rules" component={RulesScreen} 
+        options={{ title: 'Rules', headerTitleAlign: 'center'}}/>
       </Stack.Navigator>
     </NavigationContainer>
     </SafeAreaProvider>

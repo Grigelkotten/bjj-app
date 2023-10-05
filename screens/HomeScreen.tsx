@@ -14,6 +14,9 @@ export default function HomeScreen({navigation} : Props) {
         <Pressable onPress={() => navigation.navigate('ScoreBoard')}>
             <Text style={styles.button}>Score Board</Text>
         </Pressable>
+        <Pressable onPress={() => navigation.navigate('Rules')}>
+            <Text style={styles.button}>Rules</Text>
+        </Pressable>
         </View>
         </ImageBackground>
       </View>
@@ -28,6 +31,7 @@ export default function HomeScreen({navigation} : Props) {
     },
     buttonContainer: {
         flex: 1,
+        gap: 30,
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -38,6 +42,8 @@ export default function HomeScreen({navigation} : Props) {
         borderColor: 'black',
         borderWidth: 1,
         textAlign: 'center',
+        fontSize: 18, 
+        minWidth: 120
     }, 
     image: {
         flex: 1,

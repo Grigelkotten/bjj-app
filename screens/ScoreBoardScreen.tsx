@@ -75,6 +75,7 @@ export default function DetailsScreen({navigation, route} : Props) {
         textAlign: 'center',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 30
+        marginTop: 30, 
+        fontSize: 18
     }
   });

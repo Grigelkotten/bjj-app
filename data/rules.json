@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Takedown",
+        "points": 2,
+        "description": "A takedown is when one competitor starts with two feet on the mat and causes the opponent to land on their back, or in a sideways or seated position. To score points for a takedown in the IBJJF rule set the attacker must establish top position after the takedown for three seconds."
+    },
+    {
+        "id": 2,
+        "title": "Knee-On-Belly",
+        "points": 2,
+        "description":"Knee-on-belly is when the top competitor places their knee or shin on their opponent’s chest, ribs or belly while the opponent is on their back or side. The attacker must have their other knee off the ground and hold the position for at least three seconds to score." 
+    },
+    {
+        "id": 3,
+        "title": "Sweep",
+        "points": 2,
+        "description": "A sweep is when the athlete in bottom guard or half guard inverts the position to get on top of their opponent and holds the position for three seconds."
+    },
+    {
+        "id": 4,
+        "title": "Guard Pass",
+        "points": 3,
+        "description": "A guard pass is when the competitor in the top position overcomes the bottom opponent’s legs in guard or half guard to end up in side control or north-south position. The passer must hold side control or north-south for three seconds to score."
+    },
+    {
+        "id": 5,
+        "title": "Mount and Back Mount",
+        "points": 4,
+        "description": "Mount is defined as the top player sitting on the opponent’s torso while facing the opponent’s head. The top player must have two knees on the mat or one knee and one foot. The position must be held for three seconds to score. \n\nBack mount as defined in the IBJJF ruleset is a variation of mount where both athletes are facing down towards the mat, with the top athlete having the same mount position but over the opponent’s back."
+    },
+    {
+        "id": 6,
+        "title": "Back Control",
+        "points": 4,
+        "description": "Back control is when an athlete controls their opponent’s back using their legs and feet between their opponent’s thighs, while being in a position to trap at least one of their opponent’s arms. The opponent’s arm cannot be trapped above the shoulder line.\n\nIn IBJJF rules, the four points are not awarded if the attacker crosses or triangles their legs but rather an advantage is given."
+    },
+    {
+        "id": 7,
+        "title": "The Reaping Rule",
+        "points": 0,
+        "description": "When one of the athletes places his thigh behind the leg of his opponent and passes his calf on top of the opponent’s body above the knee, placing his foot beyond the vertical midline of the opponent’s body and applying pressure on his opponent’s knee from the outside.\n\nIs always penalized with a disqualification in the Gi."
+    }
+]
