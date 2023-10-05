@@ -1,16 +1,21 @@
-import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
+import {View, Text, StyleSheet, Button, Pressable, ImageBackground} from 'react-native';
 import { RootStackParamList } from '../App';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 export default function HomeScreen({navigation} : Props) {
+
+    const image = require('../assets/logo.png');
     return (
       <View style={styles.container}>
-        <Text></Text>
+        <ImageBackground source={image} resizeMode='contain' style={styles.image} blurRadius={2}>
+        <View style={styles.buttonContainer}>
         <Pressable onPress={() => navigation.navigate('ScoreBoard')}>
             <Text style={styles.button}>Score Board</Text>
         </Pressable>
+        </View>
+        </ImageBackground>
       </View>
     );
   }
@@ -19,8 +24,12 @@ export default function HomeScreen({navigation} : Props) {
     container: {
       flex: 1,
       backgroundColor: '#fff',
-      alignItems: 'center',
       justifyContent: 'center',
+    },
+    buttonContainer: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     button: {
         backgroundColor: '#d0d4cf',
@@ -28,6 +37,10 @@ export default function HomeScreen({navigation} : Props) {
         borderStyle: 'solid',
         borderColor: 'black',
         borderWidth: 1,
-        textAlign: 'center'
+        textAlign: 'center',
+    }, 
+    image: {
+        flex: 1,
+        justifyContent: 'center'
     }
   });
