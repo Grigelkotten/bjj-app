@@ -17,6 +17,9 @@ export default function HomeScreen({navigation} : Props) {
         <Pressable onPress={() => navigation.navigate('Rules')}>
             <Text style={styles.button}>Rules</Text>
         </Pressable>
+        <Pressable onPress={() => navigation.navigate('Sparring')}>
+            <Text style={styles.button}>Specific Sparring</Text>
+        </Pressable>
         </View>
         </ImageBackground>
       </View>
@@ -43,7 +46,7 @@ export default function HomeScreen({navigation} : Props) {
         borderWidth: 1,
         textAlign: 'center',
         fontSize: 18, 
-        minWidth: 120,
+        minWidth: 170,
         fontFamily: 'Montserrat-Regular'
     }, 
     image: {

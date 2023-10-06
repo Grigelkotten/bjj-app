@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Full Guard"
+    },
+    {
+        "id": 2,
+        "name": "Half Guard"
+    },
+    {
+        "id": 3,
+        "name": "De La Riva"
+    },
+    {
+        "id": 4,
+        "name": "SLX"
+    },
+    {
+        "id": 5,
+        "name": "Side Control"
+    },
+    {
+        "id": 6,
+        "name": "Spider Guard"
+    },
+    {
+        "id": 7,
+        "name": "Pass To Points"
+    },
+    {
+        "id": 8,
+        "name": "Collar And Sleeve"
+    },
+    {
+        "id": 9,
+        "name": "Turtle"
+    },
+    {
+        "id": 10,
+        "name": "Deep Half"
+    }
+]

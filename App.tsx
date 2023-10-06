@@ -9,6 +9,7 @@ import RulesScreen from './screens/RulesScreen';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from 'react';
+import SparringScreen from './screens/SparringScreen';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -16,6 +17,7 @@ export type RootStackParamList = {
   Home: undefined;
   ScoreBoard: undefined;
   Rules: undefined;
+  Sparring: undefined;
 }
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -47,6 +49,8 @@ export default function App() {
         options={{ title: 'Score Board', headerTitleAlign: 'center'}}/>
         <Stack.Screen name="Rules" component={RulesScreen} 
         options={{ title: 'Rules', headerTitleAlign: 'center'}}/>
+        <Stack.Screen name="Sparring" component={SparringScreen} 
+        options={{ title: 'Sparring', headerTitleAlign: 'center'}}/>
       </Stack.Navigator>
     </NavigationContainer>
     </SafeAreaProvider>
