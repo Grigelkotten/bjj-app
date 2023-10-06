@@ -16,6 +16,18 @@ export default function DetailsScreen({navigation, route} : Props) {
         SetFirstCount(0);
         SetSecondCount(0);
     }
+
+    const decrementFirstCount = () => {
+        if (firstCount > 0) {
+          SetFirstCount(firstCount - 1);
+        }
+      };
+    
+      const decrementSecondCount = () => {
+        if (secondCount > 0) {
+          SetSecondCount(secondCount - 1);
+        }
+      };
     
     return (
       <View style={styles.container}>
@@ -25,6 +37,14 @@ export default function DetailsScreen({navigation, route} : Props) {
         </Pressable>
         <Pressable onPress={() => SetSecondCount(secondCount + 1)}>
             <Text style={styles.secondButton}>{secondCount}</Text>
+        </Pressable>
+        </View>
+        <View style={styles.minusRow}>
+        <Pressable onPress={decrementFirstCount}>
+            <Text style={styles.redMinus}>-</Text>
+        </Pressable>
+        <Pressable onPress={decrementSecondCount}>
+            <Text style={styles.blueMinus}>-</Text>
         </Pressable>
         </View>
         <View>
@@ -81,5 +101,34 @@ export default function DetailsScreen({navigation, route} : Props) {
         marginTop: 30, 
         fontSize: 18,
         fontFamily: 'Montserrat-Regular'
+    }, 
+    minusRow: {
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        gap: 90
+    },
+    redMinus: {
+        color: 'white',
+        backgroundColor: 'red',
+        fontSize: 60,
+        justifyContent: 'center',
+        alignItems: 'center', 
+        textAlign: 'center',
+        minWidth: 80, 
+        maxHeight: 80,
+        lineHeight: 65,
+        borderRadius: 20
+    }, 
+    blueMinus: {
+        color: 'white',
+        backgroundColor: 'blue',
+        fontSize: 60,
+        justifyContent: 'center',
+        alignItems: 'center', 
+        textAlign: 'center',
+        minWidth: 80, 
+        maxHeight: 80,
+        lineHeight: 65,
+        borderRadius: 20
     }
   });

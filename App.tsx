@@ -7,6 +7,10 @@ import HomeScreen from './screens/HomeScreen';
 import ScoreBoardScreen from './screens/ScoreBoardScreen';
 import RulesScreen from './screens/RulesScreen';
 import { useFonts } from 'expo-font';
+import * as SplashScreen from 'expo-splash-screen';
+import { useCallback } from 'react';
+
+SplashScreen.preventAutoHideAsync();
 
 export type RootStackParamList = {
   Home: undefined;
@@ -22,9 +26,19 @@ export default function App() {
     'Montserrat-Regular': require('./assets/fonts/Montserrat-Regular.otf'),
   });
 
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <SafeAreaProvider>
-    <NavigationContainer>
+    <NavigationContainer onReady={onLayoutRootView}>
       <StatusBar style="auto"  />
       <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name="Home" component={HomeScreen} 
