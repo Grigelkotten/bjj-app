@@ -24,6 +24,7 @@ Komponenter jag använt i React Native:
 -Pressable
 -ImageBackground
 -Text
+-StyleSheet
 
 och i Expo's SDK:
 
