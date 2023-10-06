@@ -79,6 +79,7 @@ export default function DetailsScreen({navigation, route} : Props) {
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 30, 
-        fontSize: 18
+        fontSize: 18,
+        fontFamily: 'Montserrat-Regular'
     }
   });

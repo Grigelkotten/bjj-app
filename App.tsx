@@ -6,6 +6,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import HomeScreen from './screens/HomeScreen';
 import ScoreBoardScreen from './screens/ScoreBoardScreen';
 import RulesScreen from './screens/RulesScreen';
+import { useFonts } from 'expo-font';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -16,6 +17,11 @@ export type RootStackParamList = {
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
+
+  const [fontsLoaded] = useFonts({
+    'Montserrat-Regular': require('./assets/fonts/Montserrat-Regular.otf'),
+  });
+
   return (
     <SafeAreaProvider>
     <NavigationContainer>

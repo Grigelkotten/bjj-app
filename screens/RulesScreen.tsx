@@ -37,13 +37,14 @@ const styles = StyleSheet.create({
     },
     scrollItem: {
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     }, 
     title: {
         fontWeight: 'bold',
         fontSize: 20,
         padding: 8,
-        paddingBottom: 4
+        paddingBottom: 4,
+        fontFamily: 'Montserrat-Regular'
     }, 
     points: {
         fontWeight: 'bold',
@@ -53,6 +54,7 @@ const styles = StyleSheet.create({
     description: {
         fontSize: 16,
         marginBottom: 30,
-        marginTop: 10
+        marginTop: 10,
+        fontFamily: 'Montserrat-Regular'
     }
 });

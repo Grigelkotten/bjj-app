@@ -43,7 +43,8 @@ export default function HomeScreen({navigation} : Props) {
         borderWidth: 1,
         textAlign: 'center',
         fontSize: 18, 
-        minWidth: 120
+        minWidth: 120,
+        fontFamily: 'Montserrat-Regular'
     }, 
     image: {
         flex: 1,
